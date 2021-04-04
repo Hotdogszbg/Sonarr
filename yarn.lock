@@ -987,13 +987,14 @@
     "@sentry/utils" "5.5.0"
     tslib "^1.9.3"
 
-"@sentry/integrations@5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-5.5.0.tgz#4d36adb607c007cab30c2fd83af0e905f0b62a88"
-  integrity sha512-27B2CZEER50h5BIA7z32Cg80oD4UsVrreKglqpHLrhKhJ7KpoY3VhlEIEsoGclUyNuLXs1KtI0Op33EsgUpCxA==
+"@sentry/integrations@5.30.0":
+  version "5.30.0"
+  resolved "https://registry.yarnpkg.com/@sentry/integrations/-/integrations-5.30.0.tgz#2f25fb998cb19c76b3803d84c1a577b3d837010f"
+  integrity sha512-Fqh4ALLoQWdd+1ih0iBduANWFyNmFWMxwvBu3V/wLDRi8OcquI0lEzWai1InzTJTiNhRHPnhuU++l/vkO0OCww==
   dependencies:
-    "@sentry/types" "5.5.0"
-    "@sentry/utils" "5.5.0"
+    "@sentry/types" "5.30.0"
+    "@sentry/utils" "5.30.0"
+    localforage "1.8.1"
     tslib "^1.9.3"
 
 "@sentry/minimal@5.5.0":
@@ -1005,10 +1006,23 @@
     "@sentry/types" "5.5.0"
     tslib "^1.9.3"
 
+"@sentry/types@5.30.0":
+  version "5.30.0"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-5.30.0.tgz#19709bbe12a1a0115bc790b8942917da5636f402"
+  integrity sha512-R8xOqlSTZ+htqrfteCWU5Nk0CDN5ApUTvrlvBuiH1DyP6czDZ4ktbZB0hAgBlVcK0U+qpD3ag3Tqqpa5Q67rPw==
+
 "@sentry/types@5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@sentry/types/-/types-5.5.0.tgz#0e7d8e8359c7af685258d92b23831072bb79f46a"
   integrity sha512-3otF/miVDth91o+iign00x0o31McUPeyIFbMjLbgeTRRW9rXpu2jGrcRrvHfofECtoqCf5Y734hwvvlBvFZeIw==
+
+"@sentry/utils@5.30.0":
+  version "5.30.0"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-5.30.0.tgz#9a5bd7ccff85ccfe7856d493bffa64cabc41e980"
+  integrity sha512-zaYmoH0NWWtvnJjC9/CBseXMtKHm/tm40sz3YfJRxeQjyzRqNQPgivpd9R/oDJCYj999mzdW382p/qi2ypjLww==
+  dependencies:
+    "@sentry/types" "5.30.0"
+    tslib "^1.9.3"
 
 "@sentry/utils@5.5.0":
   version "5.5.0"
@@ -4571,6 +4585,11 @@ ignore@^5.0.6, ignore@^5.1.1:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.2.tgz#e28e584d43ad7e92f96995019cc43b9e1ac49558"
   integrity sha512-vdqWBp7MyzdmHkkRWV5nY+PfGRbYbahfuvsBCh277tq+w9zyNi7h5CYJCK0kmzti9kU+O/cB7sE8HvKv6aXAKQ==
 
+immediate@~3.0.5:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+  integrity sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=
+
 immutable@^3.8.1:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
@@ -5255,6 +5274,13 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lie@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
+  integrity sha1-mkNrLMd0bKWd56QfpGmz77dr2H4=
+  dependencies:
+    immediate "~3.0.5"
+
 liftoff@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/liftoff/-/liftoff-3.1.0.tgz#c9ba6081f908670607ee79062d700df062c52ed3"
@@ -5333,6 +5359,13 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.2, loader-utils@^1.2
     big.js "^5.2.2"
     emojis-list "^2.0.0"
     json5 "^1.0.1"
+
+localforage@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.8.1.tgz#f6c0a24b41ab33b10e4dc84342dd696f6f3e3433"
+  integrity sha512-azSSJJfc7h4bVpi0PGi+SmLQKJl2/8NErI+LhJsrORNikMZnhaQ7rv9fHj+ofwgSHrKRlsDCL/639a6nECIKuQ==
+  dependencies:
+    lie "3.1.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
