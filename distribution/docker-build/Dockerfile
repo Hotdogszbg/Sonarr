@@ -1,4 +1,4 @@
-FROM ubuntu:xenial AS builder
+FROM ubuntu:xenial-20210416 AS builder
 
 ENV DEBIAN_FRONTEND noninteractive 
 ENV MONO_VERSION 5.14
